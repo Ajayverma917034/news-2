@@ -1,7 +1,8 @@
-import { Inter } from "next/font/google";
+import { Anek_Devanagari } from "next/font/google";
 import "./globals.css";
+import ClientProvider from "../components/ClientProvider"; // Import your Client Component
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Anek_Devanagari({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <ClientProvider>
+          <main className="">{children}</main>
+        </ClientProvider>
+      </body>
     </html>
   );
 }
