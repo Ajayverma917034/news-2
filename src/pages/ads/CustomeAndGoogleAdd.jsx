@@ -12,7 +12,7 @@ import { EffectFade, Navigation, Pagination, Autoplay } from "swiper/modules";
 import { useSelector } from "react-redux";
 import { HiOutlineExclamationCircle } from "react-icons/hi2";
 import { Link } from "react-router-dom";
-import GoogleAd from "../../google-ads/GoogleAd";
+// import GoogleAd from "../../google-ads/GoogleAd";
 const CustomeAndGoogleAdd = () => {
   const { loading, error, sideAds } = useSelector((state) => state.ads);
 

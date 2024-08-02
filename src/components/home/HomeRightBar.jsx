@@ -1,7 +1,7 @@
 import React from "react";
 import NewsSection from "../news-section/news.section.component";
 import NewsVideo from "../news-video/news.video.section.component";
-import CustomeAndGoogleAdd from "../pages/advertisement/CustomeAndGoogleAdd";
+// import CustomeAndGoogleAdd from "../pages/advertisement/CustomeAndGoogleAdd";
 import SideNews from "../pages/advertisement/related-news/SideNews";
 import { YtCollectionSkeleton } from "../skeleton/HomeSkeleton";
 
@@ -19,7 +19,7 @@ const HomeRightBar = ({ data, ytData }) => {
             )}
           </div>
           <div className="flex flex-col md:gap-y-10 gap-y-2  md:col-span-2">
-            <CustomeAndGoogleAdd index={0} />
+            {/* <CustomeAndGoogleAdd index={0} /> */}
             <SideNews title={"read also"} />
           </div>
         </div>

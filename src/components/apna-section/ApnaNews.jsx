@@ -1,8 +1,8 @@
 import React from "react";
 import { CiLocationOn } from "react-icons/ci";
 import moreimg from "../../assets/moreimg.png";
-import { handleImageError } from "../../assets/errorimg1.png";
-import { formatDate } from "../../assets/data";
+import { handleImageError } from "../../lib/errorImg";
+import { formatDate } from "../../lib/formatDate";
 import Link from "next/link";
 import { CollectionNewsSkeleton } from "@/skeleton/HomeSkeleton";
 const ApnaNews = ({ data, navItems, currentIndex, hint }) => {
@@ -27,7 +27,7 @@ const ApnaNews = ({ data, navItems, currentIndex, hint }) => {
             <img
               className="max-h-[16rem] rounded-md"
               src={data[0]?.banner}
-              onError={handleImageError}
+              // onError={handleImageErro}
             />
           </div>
           <div className="md:w-[45%] w-full p-1">
